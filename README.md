@@ -21,48 +21,49 @@ You can contribute to this project by adding some new features or anything in yo
 
 <br> 
 For any query dm on  [Linkedin](https://www.linkedin.com/in/avinash-singh-071b79175)
-v.addElement(new Integer(3)):
 
-v.addElement(new Integer(4));
+program
+import java.util.*;
 
-System.out.println("Capacity after four additions:"-v.capacity());
+public class VectorDemo {
+    public static void main(String[] args) {
 
-v.addElement(new Double(5.45)):
+        Vector<Object> v = new Vector<>(3, 2);
+        System.out.println("Initial Size: " + v.size());
+        System.out.println("Initial capacity: " + v.capacity());
 
-System.out.println("Current capacity:" -v.capacity()%
+        v.addElement(new Integer(1));
+        v.addElement(new Integer(2));
+        v.addElement(new Integer(3));
+        v.addElement(new Integer(4));
 
-v.addElement(new Double(6.08));
+        System.out.println("Capacity after four additions: " + v.capacity());
 
-v.addElement(new Integer(7)):
+        v.addElement(new Double(5.45));
+        System.out.println("Current capacity: " + v.capacity());
 
-System.out.println("Current capacity:" -v.capacity()):
+        v.addElement(new Double(6.08));
+        v.addElement(new Integer(7));
+        System.out.println("Current capacity: " + v.capacity());
 
-v.addElement(new Float(9.4)):
+        v.addElement(new Float(9.4f));
+        v.addElement(new Integer(10));
+        System.out.println("Current capacity: " + v.capacity());
 
-v.addElement(new Integer(10));
+        v.addElement(new Integer(11));
+        v.addElement(new Integer(12));
 
-System.out.println("Current capacity: " -v.capacity());
+        System.out.println("First element: " + v.firstElement());
+        System.out.println("Last element: " + v.lastElement());
 
-v.addElement(new Integer(11));
+        if (v.contains(new Integer(3)))
+            System.out.println("Vector contains 3.");
 
-v.addElement(new Integer(12));
+        System.out.println("\nElements in vector:");
+        Enumeration<Object> vEnum = v.elements();
+        while (vEnum.hasMoreElements())
+            System.out.print(vEnum.nextElement() + " ");
 
-System.out.println("First element:"+(Integer)v.firstElement());
-
-System.out.println("Last element: "+(Integer)
-
-v.lastElement()):
-
-if(v.contains(new Integer(3)))
-
-System.out.println("Vector contains 3."):
-
-#enumerate the elements in the vector. Enumeration Enum v.elements(); =
-
-System.out.println("\nElements in vector:"):
-
-while(vEnum.hasMoreElements())
-
-System.out.print(vEnum.nextElement()-"");
-
-System.out.println():
+        System.out.println();
+    }
+}
